@@ -1,20 +1,21 @@
 // Get the modal
-const modal = document.getElementById("myModal");
-const modalContent = document.querySelector(".modal-content");
-
-// Get the button that opens the modal
-const btn = document.getElementById("myBtn");
+const modal = document.getElementById("siteplan__modal");
+const modalContent = document.querySelector(".siteplan__modal-content");
 
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("siteplan__modal-close")[0];
 
-const sitePlan = document.querySelector(".sitePlan");
+//targeting the site plan svg
+const sitePlan = document.querySelector(".siteplan__svg");
+
+// fetching site plan data from data.js
 const fetchData = () => {
-  fetch("http://127.0.0.1:5500/deerJS/data.js")
+  fetch("http://127.0.0.1:5500/Deerview-Project/data.js")
     .then((res) => res.json())
     .then((data) => viewData(data));
 };
 
+// view data of the site plan in modal
 const viewData = (data) => {
   data.map((user) => {
     sitePlan.addEventListener("click", (e) => {
@@ -23,7 +24,6 @@ const viewData = (data) => {
         // When the user clicks the units, open the modal
         modal.style.display = "block";
         modalContent.innerHTML = user.name + " " + user.email;
-        // modalContent.style.top = "50%";
       }
     });
   });
@@ -42,4 +42,3 @@ window.onclick = function (event) {
 };
 
 fetchData();
-
