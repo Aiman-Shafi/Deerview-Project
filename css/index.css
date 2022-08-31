@@ -1,5 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary__color: #f00e7e;
+  --primary__font-color: white;
+  --color__black: black;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  bottom: 0;
+  background: rgb(42, 42, 42);
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  overflow: hidden;
+  border-top: 2px solid var(--primary__color);
+  z-index: 50;
+}
+
+.header__container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.header__container nav {
+  display: flex;
+}
+
+.header__container nav a {
+  color: white;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 2.5rem 2rem;
+  text-transform: uppercase;
+  transition: background 0.5s ease;
+}
+
+.header__container nav .active {
+  background-color: var(--primary__color);
+}
+
+.header__container nav a:hover {
+  background: var(--primary__color);
+}
+
+.header__logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__container .header__logo img {
+  width: 70px;
+}
+
+.header__logo span {
+  font-size: 1.5rem;
+  color: var(--primary__color);
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+
+/* homepage css */
+.hero {
+  height: 90vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 90vh;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+}
