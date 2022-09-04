@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/siteplan.css" />
   </head>
   <body>
+    <div class="siteplan__zoom-btn">
+      <button id="zoom__in">Zoom In</button>
+      <button id="zoom__out">Zoom Out</button>
+      <button id="reset">Reset</button>
+    </div>
     <div class="siteplan__container">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -17,6 +22,7 @@
         viewBox="0 0 5356 2969"
         fill="none"
         class="siteplan__svg"
+        id="panzoom"
       >
         <rect width="5356" height="2969" fill="#F5F5F5" />
         <g id="sitePlan" clip-path="url(#clip0_0_1)">
@@ -506,6 +512,7 @@
         </div>
         <nav>
           <a class="" href="index.html">Home</a>
+          <a class="" href="phase.html">4 Phase</a>
           <a class="active" href="siteplan.html">Site Plan</a>
           <a class="" href="floorplans.html">Floor Plan</a>
           <a class="" href="amenities.html">Ameneties</a>
@@ -515,6 +522,7 @@
       </div>
     </header>
 
+    <script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom/dist/panzoom.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

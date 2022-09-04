@@ -6,9 +6,10 @@
     rgb(255, 249, 252) 100%
   );
   padding: 2rem 0;
+  height: 90vh;
 }
 .floorplan__container {
-  height: 600px;
+  height: 90vh;
   overflow-y: scroll;
   max-width: 1200px;
   margin: auto;

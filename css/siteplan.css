@@ -64,3 +64,23 @@ svg.siteplan__svg {
   text-decoration: none;
   cursor: pointer;
 }
+
+.siteplan__zoom-btn {
+  position: fixed;
+  right: 4%;
+  bottom: 15%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.siteplan__zoom-btn button {
+  border: 2px solid white;
+  padding: 1rem;
+  background: var(--primary__color);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
