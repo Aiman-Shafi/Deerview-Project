@@ -59,6 +59,7 @@ const displayFloorDetails = (data) => {
   //   console.log(data, floorContainer);
   floorContainer.addEventListener("click", (e) => {
     data.map((unit) => {
+      // console.log(unit, e.target.id);
       if (e.target.id == unit.id) {
         console.log(unit.id);
         modal.style.display = "block";

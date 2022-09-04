@@ -18,12 +18,14 @@ const fetchData = () => {
 // view data of the site plan in modal
 const viewData = (data) => {
   data.map((user) => {
+    // console.log(user.name, user.id, user.gender);
     sitePlan.addEventListener("click", (e) => {
-      if (parseInt(e.target.id) == user.id) {
-        console.log(user);
+      // console.log(e.target.id);
+      if (e.target.id == user.id) {
+        console.log(user.id);
         // When the user clicks the units, open the modal
         modal.style.display = "block";
-        modalContent.innerHTML = user.name + " " + user.email;
+        modalContent.innerHTML = user.name + " " + user.email + user.id;
       }
     });
   });
