@@ -6,11 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deerview | Gallery</title>
     <link rel="shortcut icon" href="images/Deer.png" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/siteplan.css" />
+    <link rel="stylesheet" href="css/gallery.css">
+    
+
   </head>
 </html>
 <body>
+<div class="gallery__container">
+  <div
+  style="--swiper-navigation-color: rgb(250, 250, 250); --swiper-pagination-color: #fff"
+  class="swiper mySwiper2"
+>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" data-aos="fade-up"
+     data-aos-duration="1000">
+      <img src="images/Gallery/Exterior/TypeAFrontNewElevationDD.jpeg" />
+    </div>
+    <div class="swiper-slide" data-aos="fade-up"
+     data-aos-duration="1000">
+      <img src="images/Gallery/Exterior/TypeB_FrontNewElevation.jpg" />
+    </div>
+    <div class="swiper-slide" data-aos="fade-up"
+     data-aos-duration="1000">
+      <img src="images/Gallery/Exterior/TypeC_FrontNewElevationDD.jpeg" />
+    </div>
+    <div class="swiper-slide" data-aos="fade-up"
+     data-aos-duration="1000">
+      <img src="images/Gallery/Exterior/TypeE_FrontNewElevation.jpg" />
+    </div>
+    <div class="swiper-slide" data-aos="fade-up"
+     data-aos-duration="1000">
+      <img src="images/Gallery/Interior/kitchencam4acroped.jpg" />
+    </div>
+    <div class="swiper-slide" data-aos="fade-up"
+     data-aos-duration="1000">
+      <img src="images/Gallery/Interior/KitchenCAM6.jpg" />
+    </div>
+    <div class="swiper-slide" data-aos="fade-up"
+     data-aos-duration="1000">
+      <img src="images/Gallery/Interior/KitchenCAM7.jpg" />
+    </div>
+    <div class="swiper-slide" data-aos="fade-up"
+     data-aos-duration="1000">
+      <img src="images/Gallery/Interior/KitchenTypeA.jpg" />
+    </div>
+    <div class="swiper-slide" data-aos="fade-up"
+     data-aos-duration="1000">
+      <img src="images/Gallery/Interior/KitchenTypeAV2cam01__02.jpg" />
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+<div thumbsSlider="" class="swiper mySwiper" data-aos="fade-up"
+data-aos-duration="3000">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="images/Gallery/Exterior/TypeAFrontNewElevationDD.jpeg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/Gallery/Exterior/TypeB_FrontNewElevation.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/Gallery/Exterior/TypeC_FrontNewElevationDD.jpeg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/Gallery/Exterior/TypeE_FrontNewElevation.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/Gallery/Interior/kitchencam4acroped.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/Gallery/Interior/KitchenCAM6.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/Gallery/Interior/KitchenCAM7.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/Gallery/Interior/KitchenTypeA.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/Gallery/Interior/KitchenTypeAV2cam01__02.jpg" />
+    </div>
+  </div>
+</div>
+</div>
+
 
     <header>
         <div class="header__container">
@@ -23,9 +110,38 @@
             <a class="" href="floorplans.html">Floor Plan</a>
             <a class="" href="amenities.html">Ameneties</a>
             <a class="active" href="gallery.html">Gallery</a>
-            <a class="" href="brochure.html">Brochure</a>
+            <a class="" href="magazine/brochure.html">Brochure</a>
         </nav>
         </div>
       </header>
+
+       <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>

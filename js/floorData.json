@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "unit": 1,
+    "sqft": "1506 to 1539",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "powderRoom": 1,
+    "img": "images/floorsPlans/UNIT_1.jpg"
+  },
+  {
+    "id": 2,
+    "unit": 2,
+    "sqft": "1108 to 1116",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "powderRoom": 1,
+    "img": "images/floorsPlans/UNIT_2.jpg"
+  },
+  {
+    "id": 3,
+    "unit": 3,
+    "sqft": "1448 to 1478",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "powderRoom": 1,
+    "img": "images/floorsPlans/UNIT_3.jpg"
+  },
+  {
+    "id": 4,
+    "unit": 4,
+    "sqft": "1371 to 1415",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "powderRoom": 3,
+    "img": "images/floorsPlans/UNIT_4.jpg"
+  },
+  {
+    "id": 5,
+    "unit": 5,
+    "sqft": "1355 to 1401",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "powderRoom": 1,
+    "img": "images/floorsPlans/UNIT_5.jpg"
+  },
+  {
+    "id": 6,
+    "unit": 6,
+    "sqft": "1096 to 1228",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "powderRoom": 1,
+    "img": "images/floorsPlans/UNIT_6.jpg"
+  },
+  {
+    "id": 7,
+    "unit": 7,
+    "sqft": "1351",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "powderRoom": 1,
+    "img": "images/floorsPlans/UNIT_7.jpg"
+  },
+  {
+    "id": 8,
+    "unit": 8,
+    "sqft": "1381",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "powderRoom": 1,
+    "img": "images/floorsPlans/UNIT_8.jpg"
+  },
+  {
+    "id": 9,
+    "unit": 9,
+    "sqft": "1429 to 1440",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "powderRoom": 1,
+    "img": "images/floorsPlans/UNIT_9.jpg"
+  },
+  {
+    "id": 10,
+    "unit": 10,
+    "sqft": "1369 to 1375",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "powderRoom": 1,
+    "img": "images/floorsPlans/UNIT_10.jpg"
+  },
+  {
+    "id": 11,
+    "unit": 11,
+    "sqft": "1821 to 1878",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "powderRoom": 1,
+    "img": "images/floorsPlans/UNIT_11.jpg"
+  }
+]

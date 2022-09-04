@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deerview Heights</title>
     <link rel="shortcut icon" href="images/Deer.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/siteplan.css" />
   </head>
 </html>
 <body>
-    <div class="hero">
+    <div class="hero" data-aos="fade-up"
+    data-aos-duration="1000">
         <video src="images/DH_Intro_Final.mp4" controls ></video>
     </div>
     <header>
@@ -25,9 +27,14 @@
             <a class="" href="floorplans.html">Floor Plan</a>
             <a class="" href="amenities.html">Ameneties</a>
             <a class="" href="gallery.html">Gallery</a>
-            <a class="" href="brochure.html">Brochure</a>
+            <a class="" href="magazine/brochure.html">Brochure</a>
         </nav>
         </div>
       </header>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>
