@@ -1,0 +1,136 @@
+.features__container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lg__container {
+  max-width: 95%;
+  height: 90vh;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.lg__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 0.2rem;
+}
+
+.lg__hotspot {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  cursor: pointer;
+}
+.lg__hotspot:hover .lg__hotspot__button,
+.lg__hotspot:active .lg__hotspot__button {
+  border-color: rgb(221, 49, 129);
+}
+.lg__hotspot:hover .lg__hotspot__button:after,
+.lg__hotspot:active .lg__hotspot__button:after {
+  background-color: rgb(221, 49, 129);
+}
+.lg__hotspot--selected {
+  z-index: 999;
+}
+.lg__hotspot--selected .lg__hotspot__label {
+  opacity: 1;
+}
+.lg__hotspot__button {
+  height: 48px;
+  width: 48px;
+  padding: 0px;
+  border-radius: 100%;
+  border: 1px solid var(--primary__color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: button-pulse 3s ease-in-out infinite;
+}
+.lg__hotspot__button:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  content: "";
+  display: block;
+  height: 16.8px;
+  width: 16.8px;
+  border-radius: 100%;
+  border: 3px solid white;
+  background-color: var(--primary__color);
+  transition: border-color 1s linear;
+}
+.lg__hotspot__label {
+  position: absolute;
+  padding: 0 0 1.1em 0;
+  width: 16em;
+  max-width: 50vw;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 14.5px;
+  line-height: 1.45em;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 2px;
+  user-select: none;
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+.lg__hotspot__label h4 {
+  margin: 0;
+  padding: 0.65em 24px;
+  background-color: #555;
+  font-size: 1.1em;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: white;
+  border-radius: 2px 2px 0 0;
+}
+.lg__hotspot__label p {
+  margin: 0;
+  padding: 1.1em 24px 0 24px;
+  color: #333;
+}
+
+.lg__hotspot--top-left .lg__hotspot__label {
+  top: 24px;
+  left: 24px;
+}
+
+.lg__hotspot--top-right .lg__hotspot__label {
+  top: 24px;
+  right: 24px;
+}
+
+.lg__hotspot--bottom-right .lg__hotspot__label {
+  right: 24px;
+  bottom: 24px;
+}
+
+.lg__hotspot--bottom-left .lg__hotspot__label {
+  bottom: 24px;
+  left: 24px;
+}
+
+@keyframes button-pulse {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.3, 1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
