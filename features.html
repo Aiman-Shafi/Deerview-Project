@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Deerview Heights</title>
+    <link rel="shortcut icon" href="images/Deer.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/features.css" />
   </head>
   <body>
-    <div class="features__container">
+    <div
+      class="features__container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div class="lg__container">
         <img class="lg__image" src="images/kitchencam4a.jpg" />
         <div
@@ -98,14 +104,18 @@
           <a class="" href="phase.html">4 Phase</a>
           <a class="" href="siteplan.html">Site Plan</a>
           <a class="" href="floorplans.html">Floor Plan</a>
-          <a class="active" href="amenities.html">Amenities</a>
-          <a class="" href="features.html">Features & Finishes</a>
+          <a class="" href="amenities.html">Amenities</a>
+          <a class="active" href="features.html">Features & Finishes</a>
           <a class="" href="gallery.html">Gallery</a>
           <a class="" href="magazine/brochure.html">Brochure</a>
         </nav>
       </div>
     </header>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/features.js"></script>
   </body>
 </html>
