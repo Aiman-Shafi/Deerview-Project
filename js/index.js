@@ -8,6 +8,15 @@ const span = document.getElementsByClassName("siteplan__modal-close")[0];
 //targeting the site plan svg
 const sitePlan = document.querySelector(".siteplan__svg");
 
+//get the svg for panzoom
+const elem = document.getElementById("panzoom");
+//get zoom in button
+const zoomInButton = document.getElementById("zoom__in");
+//get zoom out button
+const zoomOutButton = document.getElementById("zoom__out");
+//get reset button
+const resetButton = document.getElementById("reset");
+
 // fetching site plan data from data.js
 const fetchData = () => {
   fetch("js/data.json")
@@ -23,6 +32,7 @@ const viewData = (data) => {
       // console.log(e.target.id);
       if (e.target.id == user.id) {
         console.log(user.id);
+        e.target.id.classlist.add("rect__block");
         // When the user clicks the units, open the modal
         modal.style.display = "block";
         modalContent.innerHTML = user.name + " " + user.email + user.id;
@@ -31,28 +41,24 @@ const viewData = (data) => {
   });
 };
 
-// When the user clicks on <span> (x), close the modal
-span.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
+const modalEvents = () => {
+  // When the user clicks on <span> (x), close the modal
+  span.addEventListener("click", () => {
     modal.style.display = "none";
-  }
+  });
+
+  window.onclick = function (event) {
+    // When the user clicks anywhere outside of the modal, close it
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
 };
 
+modalEvents();
 fetchData();
 
-//get main container
-const elem = document.getElementById("panzoom");
-//get zoom in button
-const zoomInButton = document.getElementById("zoom__in");
-//get zoom out button
-const zoomOutButton = document.getElementById("zoom__out");
-//get reset button
-const resetButton = document.getElementById("reset");
+// Working with Zoom Features
 
 const panzoom = Panzoom(elem);
 const parent = elem.parentElement;
