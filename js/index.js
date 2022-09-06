@@ -1,9 +1,10 @@
+const siteplanModalDetails = document.querySelector(".siteplan__modal-details");
+
 // Get the modal
 const modal = document.getElementById("siteplan__modal");
-const modalContent = document.querySelector(".siteplan__modal-content");
 
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName("siteplan__modal-close")[0];
+const span = document.querySelector(".siteplan__modal-close");
 
 //targeting the site plan svg
 const sitePlan = document.querySelector(".siteplan__svg");
@@ -19,35 +20,45 @@ const resetButton = document.getElementById("reset");
 
 // fetching site plan data from data.js
 const fetchData = () => {
-  fetch("js/data.json")
+  fetch("js/siteplan.json")
     .then((res) => res.json())
     .then((data) => viewData(data));
 };
 
 // view data of the site plan in modal
 const viewData = (data) => {
-  data.map((user) => {
-    // console.log(user.name, user.id, user.gender);
+  data.map((unit) => {
+    // console.log(unit.name, unit.id, unit.gender);
     sitePlan.addEventListener("click", (e) => {
       // console.log(e.target.id);
-      if (e.target.id == user.id) {
-        console.log(user.id);
-        // When the user clicks the units, open the modal
+      if (e.target.id == unit.CityAddress) {
+        console.log(unit.CityAddress);
+        // When the unit clicks the units, open the modal
         modal.style.display = "block";
-        modalContent.innerHTML = user.name + " " + user.email + user.id;
+        siteplanModalDetails.innerHTML = `
+            <img src=${unit.Img_floorplan} />
+            <div class="siteplan__modal-contents">
+                <h2>${unit.Unit}</h2>
+                <p><i class='bx bx-home'></i> <span>${unit.sqft} Sqft</span></p>
+                <p><i class='bx bx-bed'></i> <span>${unit.Bedrooms} Bedrooms</span></p>
+                <p><i class='bx bx-bath' ></i> <span>${unit.Bathroom} Bathrooms</span></p>
+                <p><i class='bx bx-home-heart' ></i> <span>${unit.Powder_Room} Powder Rooms</span></p>
+            </div>
+        `;
       }
     });
   });
+  modalEvents();
 };
 
 const modalEvents = () => {
   // When the user clicks on <span> (x), close the modal
-  span.addEventListener("click", () => {
+  span.onclick = function () {
     modal.style.display = "none";
-  });
+  };
 
+  // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
-    // When the user clicks anywhere outside of the modal, close it
     if (event.target == modal) {
       modal.style.display = "none";
     }

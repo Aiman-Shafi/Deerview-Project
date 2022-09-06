@@ -91,3 +91,88 @@ svg.siteplan__svg {
   font-size: 0.9rem;
   pointer-events: none;
 }
+
+.group__rect {
+  position: relative;
+  z-index: 2999;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.siteplan__modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.siteplan__modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  animation: pops 0.5s ease alternate;
+}
+
+.siteplan__modal-details {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.siteplan__modal-details img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.siteplan__modal-contents h2 {
+  padding-bottom: 1rem;
+  padding-top: 3.5rem;
+  color: #000;
+  font-size: 2.3rem;
+}
+
+.siteplan__modal-contents i {
+  color: var(--primary__color);
+  font-size: 1.4rem;
+}
+
+.siteplan__modal-contents p {
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  color: rgb(52, 52, 52);
+}
+
+/* The siteplan__modal-Close Button */
+.siteplan__modal-close {
+  color: #292929;
+  float: right;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-right: 0.7rem;
+}
+
+.siteplan__modal-close:hover,
+.siteplan__modal-close:focus {
+  color: var(--primary__color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes pops {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
