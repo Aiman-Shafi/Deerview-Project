@@ -32,7 +32,6 @@ const viewData = (data) => {
       // console.log(e.target.id);
       if (e.target.id == user.id) {
         console.log(user.id);
-        e.target.id.classlist.add("rect__block");
         // When the user clicks the units, open the modal
         modal.style.display = "block";
         modalContent.innerHTML = user.name + " " + user.email + user.id;
