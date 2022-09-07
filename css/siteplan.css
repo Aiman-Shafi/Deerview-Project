@@ -24,7 +24,7 @@ svg.siteplan__svg {
 .siteplan__modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 99; /* Sit on top */
+  z-index: 99999; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -42,7 +42,7 @@ svg.siteplan__svg {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 60%;
+  width: 90%;
   /* position: absolute;
     top: 40%;
     left: 50%;
@@ -138,7 +138,7 @@ svg.siteplan__svg {
   padding-bottom: 1rem;
   padding-top: 3.5rem;
   color: #000;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 .siteplan__modal-contents i {
