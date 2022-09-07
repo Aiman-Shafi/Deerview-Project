@@ -44,9 +44,6 @@ const viewData = (data) => {
                 <p><i class='bx bx-bath' ></i> <span>${unit.Bathroom} Bathrooms</span></p>
                 <p><i class='bx bx-home-heart' ></i> <span>${unit.Powder_Room} Powder Rooms</span></p>
                 <p><i class='bx bx-building'></i></i> <span>${unit.pow}</span></p>
-                <p><i class='bx bx-home-smile'></i> <span><b>Ground:</b> ${unit.Ground} sqft</span></p>
-                <p><i class='bx bx-home-smile'></i> <span><b>First:</b> ${unit.First} sqft</span></p>
-                <p><i class='bx bx-home-smile'></i> <span><b>Second:</b> ${unit.Second} sqft</span></p>
             </div>
         `;
       }
