@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="images/Deer.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/siteplan.css" />
   </head>
 </html>
 <body>
@@ -17,6 +16,7 @@
         <img src="images/DWH_Pickering_map_600_dpi.png" alt="">
     </div>
 
+
     <header>
         <div class="header__container">
           <div class="header__logo">
@@ -24,7 +24,7 @@
         </div>
         <nav>
             <a class="" href="index.html">Home</a>
-            <a class="" href="phase.html">4 Phase</a>
+            <a class="" href="community.html">Community Plan</a>
             <a class="" href="siteplan.html">Site Plan</a>
             <a class="" href="floorplans.html">Floor Plan</a>
             <a class="active" href="amenities.html">Amenities</a>
@@ -39,5 +39,28 @@
       <script>
         AOS.init();
       </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        freeMode: true,
+        watchSlidesProgress: true
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        thumbs: {
+          swiper: swiper
+        }
+      });
+    </script>
 </body>
 </html>

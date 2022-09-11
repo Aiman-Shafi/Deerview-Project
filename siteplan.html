@@ -10,6 +10,10 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/siteplan.css" />
   </head>
@@ -2419,7 +2423,7 @@
         </div>
         <nav>
           <a class="" href="index.html">Home</a>
-          <a class="" href="phase.html">4 Phase</a>
+          <a class="" href="community.html">Community Plan</a>
           <a class="active" href="siteplan.html">Site Plan</a>
           <a class="" href="floorplans.html">Floor Plan</a>
           <a class="" href="amenities.html">Amenities</a>
@@ -2432,8 +2436,29 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom/dist/panzoom.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      // swiper js
+
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 2,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
     </script>
     <script src="js/index.js"></script>
   </body>
