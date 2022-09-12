@@ -47,7 +47,7 @@ const displayFloorData = (data) => {
                 <p><i class='bx bx-home'></i> <span>${unit.sqft} Sqft</span></p>
                 <p><i class='bx bx-bed'></i> <span>${unit.bedrooms} Bedrooms</span></p>
                 <p><i class='bx bx-bath' ></i> <span>${unit.bathrooms} Bathrooms</span></p>
-                <p><i class='bx bx-home-heart' ></i> <span>${unit.powderRoom} Powder Rooms</span></p>
+                <p><i class='bx bx-home-heart' ></i> <span>${unit.powderRoom} Powder Room</span></p>
             </div>
             <img src=${unit.img} alt="">
         </div>
@@ -85,7 +85,7 @@ const displayFloorDetails = (data) => {
                 <p><i class='bx bx-home'></i> <span>${unit.sqft} Sqft</span></p>
                 <p><i class='bx bx-bed'></i> <span>${unit.bedrooms} Bedrooms</span></p>
                 <p><i class='bx bx-bath' ></i> <span>${unit.bathrooms} Bathrooms</span></p>
-                <p><i class='bx bx-home-heart' ></i> <span>${unit.powderRoom} Powder Rooms</span></p>
+                <p><i class='bx bx-home-heart' ></i> <span>${unit.powderRoom} Powder Room</span></p>
             </div>
         `;
       }

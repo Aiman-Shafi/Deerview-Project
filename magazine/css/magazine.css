@@ -370,6 +370,7 @@ body {
 
 .thumbnails img {
   float: left;
+  object-fit: fill;
 }
 
 .exit-message {

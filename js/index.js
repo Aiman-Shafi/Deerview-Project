@@ -71,7 +71,7 @@ const viewData = (data) => {
                     <p><i class='bx bx-home'></i> <span>${unit.sqft} Sqft</span></p>
                     <p><i class='bx bx-bed'></i> <span>${unit.Bedrooms} Bedrooms</span></p>
                     <p><i class='bx bx-bath' ></i> <span>${unit.Bathroom} Bathrooms</span></p>
-                    <p><i class='bx bx-home-heart' ></i> <span>${unit.Powder_Room} Powder Rooms</span></p>
+                    <p><i class='bx bx-home-heart' ></i> <span>${unit.PowderRoom} Powder Room</span></p>
                     <p><i class='bx bx-building'></i></i> <span>${unit.pow}</span></p>
                 </div>
         `;
