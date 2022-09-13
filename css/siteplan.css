@@ -1,7 +1,7 @@
 svg {
   width: 100%;
-  height: 90vh;
-  object-fit: cover;
+  height: 100%;
+  /* object-fit: cover; */
 }
 
 svg.siteplan__svg {
@@ -14,7 +14,7 @@ svg.siteplan__svg {
   border-top: 5px solid var(--primary__color);
   z-index: 11;
   width: 100%;
-  height: 100%;
+  height: 92vh;
   transform-origin: 0px 0px;
   transform: scale(1) translate(0px, 0px);
   cursor: grab;

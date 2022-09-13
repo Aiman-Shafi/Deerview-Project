@@ -29,9 +29,6 @@ header {
   bottom: 0;
   background: rgb(42, 42, 42);
   width: 100%;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
   overflow: hidden;
   border-top: 2px solid var(--primary__color);
   z-index: 50;
