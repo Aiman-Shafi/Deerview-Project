@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 12px;
+}
 
 :root {
   --primary__color: #f00e7e;
@@ -104,4 +107,10 @@ header {
   cursor: pointer;
   position: relative;
   z-index: 99;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
 }
