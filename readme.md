@@ -10,6 +10,8 @@ Creating a website for large screen which includes architect plan and details of
 #### External Libraries 
  1. Used Swiper JS for gallery page
  2. For Brochure Turn JS was used
+ 3. Pan zoom using Jquery **[View Plugin](https://www.jqueryscript.net/zoom/jQuery-Plugin-For-Panning-Zooming-Any-Elements-panzoom.html#google_vignette)**
+
  
 
 ### 1. Home page 
@@ -19,7 +21,7 @@ Creating a website for large screen which includes architect plan and details of
 
 ### 2.  Site Plan
 
-✅  This a was bigger challenge working with SVG. while clicking on each block in the SVG apartment details will appear in a popup depending on the floor or blocks
+✅  This a was bigger challenge working with SVG. while clicking on each block in the SVG apartment details will appear in a popup depending on the floor or blocks with zoom in & out feature using Pan zoom jquery plugin
 
 ![enter image description here](https://github.com/Aiman-Shafi/Deerview-Project/blob/main/images/showcase/siteplan.png?raw=true)
 
