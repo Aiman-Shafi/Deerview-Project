@@ -118,11 +118,11 @@ fetchData();
 
 // Working with Zoom Features
 
-const panzoom = Panzoom(elem);
-const parent = elem.parentElement;
+// const panzoom = Panzoom(elem);
+// const parent = elem.parentElement;
 
-//enabling events
-parent.addEventListener("wheel", panzoom.zoomWithWheel);
-zoomInButton.addEventListener("click", panzoom.zoomIn);
-zoomOutButton.addEventListener("click", panzoom.zoomOut);
-resetButton.addEventListener("click", panzoom.reset);
+// //enabling events
+// parent.addEventListener("wheel", panzoom.zoomWithWheel);
+// zoomInButton.addEventListener("click", panzoom.zoomIn);
+// zoomOutButton.addEventListener("click", panzoom.zoomOut);
+// resetButton.addEventListener("click", panzoom.reset);
