@@ -8,9 +8,9 @@
 Creating a website for large screen which includes architect plan and details of their apartments and lands. The Project is built in HTML, CSS & Javascript. 
 
 #### External Libraries 
- 1. Used Swiper JS for gallery page
- 2. For Brochure Turn JS was used
- 3. Pan zoom using Jquery **[View Plugin](https://www.jqueryscript.net/zoom/jQuery-Plugin-For-Panning-Zooming-Any-Elements-panzoom.html#google_vignette)**
+ 1. Used Swiper JS for gallery page - view **[swiper.js](https://swiperjs.com/)**
+ 2. For Brochure Turn JS was used - view **[turn.js](http://www.turnjs.com/)**
+ 3. Pan zoom using Jquery **[view Plugin](https://www.jqueryscript.net/zoom/jQuery-Plugin-For-Panning-Zooming-Any-Elements-panzoom.html#google_vignette)**
 
  
 
